@@ -379,15 +379,15 @@ document.addEventListener("DOMContentLoaded", function () {
 					if (localStorage.getItem("cookieConsent") == false) {
 						
 					} else {
-						elementorProFrontend.modules.popup.showPopup({ id: "28610" });
+						/* popup disabled for mockup */;
 						jQuery('#accept-cookie').on('click', function () {
 							localStorage.setItem("cookieConsent", "true");
-							elementorProFrontend.modules.popup.showPopup({ id: "28610", toggle:true});
+							/* popup disabled for mockup */;
 							window.clarity("consent");
 						});
 						jQuery('#decline-cookie').on('click', function () {
 							localStorage.setItem("cookieConsent", "false");
-							elementorProFrontend.modules.popup.showPopup({ id: "28610", toggle:true});
+							/* popup disabled for mockup */;
 							window.clarity('consent', false)
 						});
 					}
@@ -2285,7 +2285,7 @@ table tr.coupon-gelpadsfree a.woocommerce-remove-coupon {
     display: none !important;
 }
 </style>
-	<link rel="dns-prefetch" href="//js.stripe.com" data-set-by="Speed Optimizer by SiteGround"/><link rel="dns-prefetch" href="//r.stripe.com" data-set-by="Speed Optimizer by SiteGround"/><link rel="dns-prefetch" href="// https://www.facebook.com" data-set-by="Speed Optimizer by SiteGround"/></head>
+	<link rel="dns-prefetch" href="//js.stripe.com" data-set-by="Speed Optimizer by SiteGround"/><link rel="dns-prefetch" href="//r.stripe.com" data-set-by="Speed Optimizer by SiteGround"/><link rel="dns-prefetch" href="// https://www.facebook.com" data-set-by="Speed Optimizer by SiteGround"/><style id="mockup-no-popups">.dialog-widget,.elementor-popup-modal,.dialog-lightbox-widget,[data-elementor-type="popup"],.fkcart-modal,.fkcart-modal-container{display:none!important;opacity:0!important;visibility:hidden!important;pointer-events:none!important;}html,body{overflow:auto!important;}</style></head>
 
 	<body class="wp-singular wffn_landing-template wffn_landing-template-wflp-canvas wffn_landing-template-wflp-canvas-php single single-wffn_landing postid-108537 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor theme-hello-elementor bt-hidevars woocommerce-no-js hello-elementor-default elementor-default elementor-kit-17 elementor-page elementor-page-108537 wffn-page-template">
 
